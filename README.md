@@ -5,6 +5,9 @@ The paper published on this topic is, [An Advanced Features Extraction Module fo
 
 In recent years, convolutional neural networks (CNNs) have achieved remarkable advancement in the field of remote sensing image super-resolution due to the complexity and variability of textures and structures in remote sensing images (RSIs), which often repeat in the same images but differ across others. Current deep learning-based super-resolution models focus less on high-frequency features, which leads to suboptimal performance in capturing contours, textures, and spatial information. State-of-the-art CNN-based methods now focus on the feature extraction of RSIs using attention mechanisms. However, these methods are still incapable of effectively identifying and utilizing key content attention signals in RSIs. To solve this problem, we proposed an advanced feature extraction module called Channel and Spatial Attention Feature Extraction (CSA-FE) to effectively extract the features by using the channel and spatial attention incorporated with the standard vision transformer (ViT). The proposed method trained over the UCMerced dataset on scales 2, 3, and 4. The experimental results show that our proposed method helps the model focus on the specific channels and spatial locations containing high-frequency information so that the model can focus on relevant features and suppress irrelevant ones, which enhances the quality of super-resolved images. Our model achieved superior performance compared to various existing models.
 
+![Model Diagram](https://github.com/user-attachments/assets/f73cedd8-167b-4a63-b89a-d546abe60ac1)
+
+
 ## Requirements
 - Python 3.8+
 - Pytorch>=1.8
@@ -47,4 +50,20 @@ Compute the evaluated results in terms of PSNR, SSIM, SCC, and SAM where the SR/
 cd metric_scripts 
 python calculate_PSNR_SSIM.py
 ```
+## Citation
+If you find this code useful for your research, please cite our paper:
+```
+@INPROCEEDINGS{10595015,
+  author={Sultan, Naveed and Hajian, Amir and Aramvith, Supavadee},
+  booktitle={2024 21st International Conference on Electrical Engineering/Electronics, Computer, Telecommunications and Information Technology (ECTI-CON)}, 
+  title={An Advanced Features Extraction Module for Remote Sensing Image Super-Resolution}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-6},
+  keywords={Computational modeling;Superresolution;Feature extraction;Transformers;Decoding;Telecommunications;Spatial resolution;image super-resolution;remote sensing images;spatial attention;transformer},
+  doi={10.1109/ECTI-CON60892.2024.10595015}}
+```
 
+## Acknowledgement
+This code is built on [HSENet (Pytorch)](https://github.com/Shaosifan/HSENet) and [TRANSENet (Pytorch)](https://github.com/Shaosifan/TransENet). We thank the authors for sharing the codes.
