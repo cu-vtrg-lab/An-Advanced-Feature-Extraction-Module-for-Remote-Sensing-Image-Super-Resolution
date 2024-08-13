@@ -1,7 +1,7 @@
 # CSARST
 CSARST Code
 # A Channel and Spatial Attention Feature Extraction Method for Remote Sensing Image Super-Resolution Using Vision Transformer
-The paper published on this topic is, [An Advanced Features Extraction Module for Remote Sensing Image Super-Resolution](https://ieeexplore.ieee.org/document/10595015)
+The paper published on this topic is, [An Advanced Features Extraction Module for Remote Sensing Image Super-Resolution](https://ieeexplore.ieee.org/document/10595015) The main contribution of this work is from my Thesis work.
 
 In recent years, convolutional neural networks (CNNs) have achieved remarkable advancement in the field of remote sensing image super-resolution due to the complexity and variability of textures and structures in remote sensing images (RSIs), which often repeat in the same images but differ across others. Current deep learning-based super-resolution models focus less on high-frequency features, which leads to suboptimal performance in capturing contours, textures, and spatial information. State-of-the-art CNN-based methods now focus on the feature extraction of RSIs using attention mechanisms. However, these methods are still incapable of effectively identifying and utilizing key content attention signals in RSIs. To solve this problem, we proposed an advanced feature extraction module called Channel and Spatial Attention Feature Extraction (CSA-FE) to effectively extract the features by using the channel and spatial attention incorporated with the standard vision transformer (ViT). The proposed method trained over the UCMerced dataset on scales 2, 3, and 4. The experimental results show that our proposed method helps the model focus on the specific channels and spatial locations containing high-frequency information so that the model can focus on relevant features and suppress irrelevant ones, which enhances the quality of super-resolved images. Our model achieved superior performance compared to various existing models.
 
@@ -50,6 +50,17 @@ Compute the evaluated results in terms of PSNR, SSIM, SCC, and SAM where the SR/
 cd metric_scripts 
 python calculate_PSNR_SSIM.py
 ```
+## Quantitative Results
+
+![New](https://github.com/user-attachments/assets/40b1066a-fa65-4189-9eec-50d4921fbb1b)
+
+## Perceptual Results
+- Result on a scale factor of 3
+![Screenshot_20](https://github.com/user-attachments/assets/7a1e6cf0-1a76-4492-8628-f4206c4b0b3f)
+- Result on a scale factor of 4
+![Screenshot_21](https://github.com/user-attachments/assets/e2dba69d-4f0d-40fe-a03e-c61cd25644cf)
+
+
 ## Citation
 If you find this code useful for your research, please cite our paper:
 ```
