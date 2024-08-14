@@ -5,7 +5,8 @@ The paper published on this topic is, [An Advanced Features Extraction Module fo
 
 In recent years, convolutional neural networks (CNNs) have achieved remarkable advancement in the field of remote sensing image super-resolution due to the complexity and variability of textures and structures in remote sensing images (RSIs), which often repeat in the same images but differ across others. Current deep learning-based super-resolution models focus less on high-frequency features, which leads to suboptimal performance in capturing contours, textures, and spatial information. State-of-the-art CNN-based methods now focus on the feature extraction of RSIs using attention mechanisms. However, these methods are still incapable of effectively identifying and utilizing key content attention signals in RSIs. To solve this problem, we proposed an advanced feature extraction module called Channel and Spatial Attention Feature Extraction (CSA-FE) to effectively extract the features by using the channel and spatial attention incorporated with the standard vision transformer (ViT). The proposed method trained over the UCMerced dataset on scales 2, 3, and 4. The experimental results show that our proposed method helps the model focus on the specific channels and spatial locations containing high-frequency information so that the model can focus on relevant features and suppress irrelevant ones, which enhances the quality of super-resolved images. Our model achieved superior performance compared to various existing models.
 
-![Model Diagram](https://github.com/user-attachments/assets/f73cedd8-167b-4a63-b89a-d546abe60ac1)
+![Model Diagram](https://github.com/user-attachments/assets/d98793c7-f32e-43ed-a243-cade7899da25)
+
 
 
 ## Requirements
@@ -52,13 +53,15 @@ python calculate_PSNR_SSIM.py
 ```
 ## Quantitative Results
 
-![New](https://github.com/user-attachments/assets/40b1066a-fa65-4189-9eec-50d4921fbb1b)
+![New](https://github.com/user-attachments/assets/b4423bcb-fa1b-467a-80f0-062dfb2ced41)
 
 ## Perceptual Results
 - Result on a scale factor of 3
-![Screenshot_20](https://github.com/user-attachments/assets/7a1e6cf0-1a76-4492-8628-f4206c4b0b3f)
+![Screenshot_20](https://github.com/user-attachments/assets/9d754a04-f528-4555-96cd-d5d80a1fa3f0)
+
 - Result on a scale factor of 4
-![Screenshot_21](https://github.com/user-attachments/assets/e2dba69d-4f0d-40fe-a03e-c61cd25644cf)
+![Screenshot_21](https://github.com/user-attachments/assets/4c079a52-4ac9-47a0-ac92-d30bf2dea794)
+
 
 
 ## Citation
